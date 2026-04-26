@@ -1,0 +1,15 @@
+Use ai-dev-system.
+
+Primary entry:
+AI_ENTRY.md
+
+Rules:
+- choose QUICK / HYBRID / FULL first
+- use LANGUAGE_ROUTER
+- use SKILL_INDEX before full skills
+- selected skills only
+- minimal diff
+- no invented files/APIs
+- answer in user language
+- run SELF_CHECK after compaction or drift
+

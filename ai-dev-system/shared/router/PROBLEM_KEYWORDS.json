@@ -1,0 +1,99 @@
+{
+  "api-debug": [
+    "api",
+    "endpoint",
+    "request",
+    "response",
+    "500",
+    "404",
+    "401",
+    "403"
+  ],
+  "database-debug": [
+    "database",
+    "migration",
+    "transaction",
+    "index",
+    "query",
+    "orm"
+  ],
+  "dependency-debug": [
+    "dependency",
+    "provider",
+    "import",
+    "circular",
+    "module"
+  ],
+  "build-error": [
+    "build",
+    "compile",
+    "bundler",
+    "tsconfig",
+    "vite",
+    "webpack",
+    "ci"
+  ],
+  "performance-debug": [
+    "slow",
+    "timeout",
+    "memory leak",
+    "high cpu",
+    "performance"
+  ],
+  "auth-security": [
+    "auth",
+    "token",
+    "session",
+    "cookie",
+    "permission",
+    "security"
+  ],
+  "git-workflow": [
+    "git",
+    "rebase",
+    "merge conflict",
+    "detached head",
+    "force push"
+  ],
+  "deployment-debug": [
+    "deploy",
+    "docker",
+    "ci/cd",
+    "env",
+    "production",
+    "rollback"
+  ],
+  "async-debug": [
+    "async",
+    "await",
+    "coroutine",
+    "event loop",
+    "thread",
+    "deadlock"
+  ],
+  "orchestration": [
+    "orchestrate",
+    "multi-agent",
+    "parallel",
+    "team",
+    "delegate"
+  ],
+  "quality-gate": [
+    "quality gate",
+    "verify",
+    "lint",
+    "typecheck",
+    "coverage"
+  ],
+  "context-budget": [
+    "context",
+    "token",
+    "budget",
+    "compact"
+  ],
+  "preview": [
+    "preview",
+    "dev server",
+    "localhost"
+  ]
+}

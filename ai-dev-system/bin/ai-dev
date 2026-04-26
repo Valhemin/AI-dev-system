@@ -1,0 +1,281 @@
+#!/bin/zsh
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SYSTEM_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+DEFAULT_PROJECT_ROOT="$(cd "$SYSTEM_ROOT/.." && pwd)"
+
+cmd="${1:-help}"
+
+resolve_project_or_default() {
+  local candidate="${1:-}"
+  if [ -n "$candidate" ] && [ -d "$candidate" ]; then
+    echo "$candidate"
+  else
+    echo "$DEFAULT_PROJECT_ROOT"
+  fi
+}
+
+run_project_sync_steps() {
+  local project="$1"
+  python3 "$SYSTEM_ROOT/shared/scripts/project-intake.py" --system-root "$SYSTEM_ROOT" --project-root "$project"
+  python3 "$SYSTEM_ROOT/shared/scripts/update-project-memory.py" --project-root "$project"
+  python3 "$SYSTEM_ROOT/shared/scripts/update-docs-from-source.py" --project-root "$project"
+  python3 "$SYSTEM_ROOT/shared/scripts/project-doc-health.py" --project-root "$project"
+  python3 "$SYSTEM_ROOT/shared/scripts/project-dedupe-report.py" --system-root "$SYSTEM_ROOT" --project-root "$project"
+}
+
+run_project_status() {
+  local project="$1"
+  python3 "$SYSTEM_ROOT/shared/scripts/project-status.py" --project-root "$project"
+}
+
+case "$cmd" in
+  install)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      tool="${3:-all}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      tool="${2:-all}"
+    fi
+    "$SYSTEM_ROOT/shared/scripts/install-project.sh" "$SYSTEM_ROOT" "$project" "$tool"
+    ;;
+  project-init)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      tool="${3:-all}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      tool="${2:-all}"
+    fi
+    "$SYSTEM_ROOT/shared/scripts/install-project.sh" "$SYSTEM_ROOT" "$project" "$tool"
+    ;;
+  project-sync)
+    project="$(resolve_project_or_default "${2:-}")"
+    run_project_sync_steps "$project"
+    ;;
+  project-setup)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      tool="${3:-all}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      tool="${2:-all}"
+    fi
+    "$SYSTEM_ROOT/shared/scripts/install-project.sh" "$SYSTEM_ROOT" "$project" "$tool"
+    run_project_sync_steps "$project"
+    run_project_status "$project"
+    ;;
+  project-work)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      task="${3:-}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      task="${2:-}"
+    fi
+    if [ -z "$task" ]; then
+      echo "Usage: ai-dev project-work [/path/to/project] \"task description\""
+      exit 1
+    fi
+    run_project_sync_steps "$project"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-brief.py" --system-root "$SYSTEM_ROOT" --project-root "$project" --task "$task"
+    run_project_status "$project"
+    ;;
+  project-health)
+    project="$(resolve_project_or_default "${2:-}")"
+    run_project_status "$project"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-doc-health.py" --project-root "$project"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-dedupe-report.py" --system-root "$SYSTEM_ROOT" --project-root "$project"
+    ;;
+  intake-project)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-intake.py" --system-root "$SYSTEM_ROOT" --project-root "$project"
+    ;;
+  update-project-memory)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/update-project-memory.py" --project-root "$project"
+    ;;
+  project-status)
+    project="$(resolve_project_or_default "${2:-}")"
+    run_project_status "$project"
+    ;;
+  project-brief)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      task="${3:-}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      task="${2:-}"
+    fi
+    if [ -z "$task" ]; then
+      echo "Usage: ai-dev project-brief [/path/to/project] \"task description\""
+      exit 1
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/project-brief.py" --system-root "$SYSTEM_ROOT" --project-root "$project" --task "$task"
+    ;;
+  project-doc-health)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-doc-health.py" --project-root "$project"
+    ;;
+  project-dedupe-report)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/project-dedupe-report.py" --system-root "$SYSTEM_ROOT" --project-root "$project"
+    ;;
+  update-docs-from-source)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/update-docs-from-source.py" --project-root "$project"
+    ;;
+  save-session)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      topic="${3:-working-session}"
+      next_step="${4:-Review changed files and continue from the current task context.}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      topic="${2:-working-session}"
+      next_step="${3:-Review changed files and continue from the current task context.}"
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/session-save.py" --project-root "$project" --topic "$topic" --next-step "$next_step"
+    ;;
+  resume-session)
+    project="$(resolve_project_or_default "${2:-}")"
+    python3 "$SYSTEM_ROOT/shared/scripts/session-resume.py" --project-root "$project"
+    ;;
+  scaffold-project-skill)
+    if [ -n "${2:-}" ] && [ -d "$2" ]; then
+      project="$2"
+      name="${3:-}"
+      description="${4:-}"
+      category="${5:-task}"
+    else
+      project="$DEFAULT_PROJECT_ROOT"
+      name="${2:-}"
+      description="${3:-}"
+      category="${4:-task}"
+    fi
+    if [ -z "$name" ] || [ -z "$description" ]; then
+      echo "Usage: ai-dev scaffold-project-skill [/path/to/project] \"skill name\" \"description\" [category]"
+      exit 1
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/project-skill-scaffold.py" \
+      --system-root "$SYSTEM_ROOT" \
+      --project-root "$project" \
+      --name "$name" \
+      --description "$description" \
+      --category "$category"
+    ;;
+  doctor)
+    "$SYSTEM_ROOT/shared/scripts/doctor.sh" "$SYSTEM_ROOT"
+    ;;
+  entry)
+    mode="${2:-lean}"
+    case "$mode" in
+      lean)
+        echo "$SYSTEM_ROOT/AI_ENTRY.md"
+        ;;
+      team)
+        echo "$SYSTEM_ROOT/team-dev/AI_TEAM.md"
+        ;;
+      full)
+        echo "$SYSTEM_ROOT/team-dev/workflows/FULL.md"
+        ;;
+      *)
+        echo "Usage: ai-dev entry [lean|team|full]"
+        exit 1
+        ;;
+    esac
+    ;;
+  refresh-catalog)
+    repos="${2:-$SYSTEM_ROOT/../ai-repos}"
+    "$SYSTEM_ROOT/shared/scripts/refresh-registry.sh" "$SYSTEM_ROOT" "$repos"
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" eval --root "$SYSTEM_ROOT"
+    ;;
+  update-repos)
+    repos="${2:-$SYSTEM_ROOT/../ai-repos}"
+    "$SYSTEM_ROOT/shared/scripts/update-ai-repos.sh" "$SYSTEM_ROOT" "$repos"
+    ;;
+  system-refresh)
+    repos="${2:-$SYSTEM_ROOT/../ai-repos}"
+    "$SYSTEM_ROOT/shared/scripts/update-ai-repos.sh" "$SYSTEM_ROOT" "$repos"
+    python3 "$SYSTEM_ROOT/shared/scripts/freeze-source-metadata.py" --system-root "$SYSTEM_ROOT"
+    "$SYSTEM_ROOT/shared/scripts/doctor.sh" "$SYSTEM_ROOT"
+    ;;
+  freeze-sources)
+    python3 "$SYSTEM_ROOT/shared/scripts/freeze-source-metadata.py" --system-root "$SYSTEM_ROOT"
+    ;;
+  portable-release)
+    repos="${2:-$SYSTEM_ROOT/../ai-repos}"
+    "$SYSTEM_ROOT/shared/scripts/refresh-registry.sh" "$SYSTEM_ROOT" "$repos"
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" eval --root "$SYSTEM_ROOT"
+    python3 "$SYSTEM_ROOT/shared/scripts/freeze-source-metadata.py" --system-root "$SYSTEM_ROOT"
+    "$SYSTEM_ROOT/shared/scripts/doctor.sh" "$SYSTEM_ROOT"
+    ;;
+  search-skill)
+    query="${2:-}"
+    if [ -z "$query" ]; then
+      echo "Usage: ai-dev search-skill \"query\""
+      exit 1
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" search --root "$SYSTEM_ROOT" --query "$query"
+    ;;
+  search-role)
+    query="${2:-}"
+    if [ -z "$query" ]; then
+      echo "Usage: ai-dev search-role \"query\""
+      exit 1
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" search --root "$SYSTEM_ROOT" --query "$query" --type agent
+    ;;
+  search-workflow)
+    query="${2:-}"
+    if [ -z "$query" ]; then
+      echo "Usage: ai-dev search-workflow \"query\""
+      exit 1
+    fi
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" search --root "$SYSTEM_ROOT" --query "$query" --type workflow
+    ;;
+  eval-routing)
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" eval --root "$SYSTEM_ROOT"
+    ;;
+  registry-health)
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" health --root "$SYSTEM_ROOT"
+    ;;
+  help|*)
+    echo "ai-dev commands:"
+    echo ""
+    echo "Recommended daily commands:"
+    echo "  ai-dev project-setup [/path/to/project] [claude|cursor|chatgpt|copilot|all]"
+    echo "  ai-dev project-work [/path/to/project] \"task description\""
+    echo "  ai-dev project-health [/path/to/project]"
+    echo "  ai-dev project-status [/path/to/project]"
+    echo "  ai-dev save-session [/path/to/project] \"topic\" [\"next step\"]"
+    echo "  ai-dev resume-session [/path/to/project]"
+    echo ""
+    echo "Advanced commands:"
+    echo "  ai-dev project-init [/path/to/project] [claude|cursor|chatgpt|copilot|all]"
+    echo "  ai-dev install [/path/to/project] [claude|cursor|chatgpt|copilot|all]"
+    echo "  ai-dev intake-project [/path/to/project]"
+    echo "  ai-dev project-sync [/path/to/project]"
+    echo "  ai-dev project-brief [/path/to/project] \"task description\""
+    echo "  ai-dev update-project-memory [/path/to/project]"
+    echo "  ai-dev project-doc-health [/path/to/project]"
+    echo "  ai-dev project-dedupe-report [/path/to/project]"
+    echo "  ai-dev update-docs-from-source [/path/to/project]"
+    echo "  ai-dev scaffold-project-skill [/path/to/project] \"skill name\" \"description\" [category]"
+    echo "  ai-dev doctor"
+    echo "  ai-dev entry [lean|team|full]"
+    echo "  ai-dev system-refresh [path/to/ai-repos]"
+    echo "  ai-dev update-repos [path/to/ai-repos]"
+    echo "  ai-dev refresh-catalog [path/to/ai-repos]"
+    echo "  ai-dev freeze-sources"
+    echo "  ai-dev portable-release [path/to/ai-repos]"
+    echo "  ai-dev search-skill \"query\""
+    echo "  ai-dev search-role \"query\""
+    echo "  ai-dev search-workflow \"query\""
+    echo "  ai-dev eval-routing"
+    echo "  ai-dev registry-health"
+    ;;
+esac

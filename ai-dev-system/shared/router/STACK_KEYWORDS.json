@@ -1,0 +1,121 @@
+{
+  "angular": [
+    "angular",
+    "rxjs",
+    "ngrx"
+  ],
+  "cpp": [
+    "c++",
+    "cpp",
+    "cmake",
+    "gtest"
+  ],
+  "csharp": [
+    "c#",
+    ".net",
+    "xunit",
+    "asp.net"
+  ],
+  "docker": [
+    "docker",
+    "container",
+    "compose",
+    "dockerfile"
+  ],
+  "go": [
+    "golang",
+    " go ",
+    "go module",
+    "go test"
+  ],
+  "java": [
+    "java",
+    "spring",
+    "maven",
+    "gradle"
+  ],
+  "javascript": [
+    "javascript",
+    "node",
+    "npm",
+    "browser",
+    "js"
+  ],
+  "nestjs": [
+    "nestjs",
+    "provider",
+    "module",
+    "controller"
+  ],
+  "nextjs": [
+    "next.js",
+    "nextjs",
+    "app router",
+    "server component"
+  ],
+  "php": [
+    "php",
+    "laravel",
+    "symfony"
+  ],
+  "playwright": [
+    "playwright",
+    "locator",
+    "e2e"
+  ],
+  "python": [
+    "python",
+    ".py",
+    "fastapi",
+    "django",
+    "pydantic",
+    "pytest",
+    "asyncio"
+  ],
+  "react": [
+    "react",
+    "hooks",
+    "useeffect",
+    "jsx"
+  ],
+  "ruby": [
+    "ruby",
+    "rails",
+    "gemfile"
+  ],
+  "rust": [
+    "rust",
+    "cargo",
+    "borrow",
+    "tokio"
+  ],
+  "selenium": [
+    "selenium",
+    "webdriver",
+    "browser automation"
+  ],
+  "sql": [
+    "sql",
+    "database",
+    "migration",
+    "postgres",
+    "mysql",
+    "sqlite"
+  ],
+  "svelte": [
+    "svelte",
+    "sveltekit"
+  ],
+  "typescript": [
+    "typescript",
+    ".ts",
+    "tsconfig",
+    "type-safe",
+    "tsx"
+  ],
+  "vue": [
+    "vue",
+    "nuxt",
+    "composition api"
+  ]
+}

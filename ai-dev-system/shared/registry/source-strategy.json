@@ -1,0 +1,25 @@
+{
+  "preferred_upstream": "everything-claude-code",
+  "policy": "Use everything-claude-code as the first collection and curation source when importing or refreshing candidate agents, commands, and skills. Do not lock the system to ECC only; allow other repos and manual additions whenever they are a better fit.",
+  "source_priorities": {
+    "everything-claude-code": 120,
+    "antigravity-kit": 90,
+    "openai-skills": 85,
+    "agent-skills": 82,
+    "skills": 80,
+    "awesome-copilot-for-testers": 72,
+    "claude-skills": 68,
+    "awesome-cursorrules": 62,
+    "python-refactoring-skills": 60,
+    "agent-nestjs-skills": 60,
+    "claude-debug-and-refactor-skills-plugin": 58,
+    "awesome-copilot": 52,
+    "antigravity-awesome-skills": 40
+  },
+  "fallback_policy": [
+    "Use openai-skills first for focused, high-signal security or curated specialist gaps.",
+    "Use antigravity-kit for simple portable roles/workflows when ECC coverage is absent or too tool-specific.",
+    "Use broad catalogs like antigravity-awesome-skills mainly for discovery, not as the first active-core source.",
+    "Manual project-local or hand-curated additions always remain allowed."
+  ]
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "go-build-error",
+    "prompt": "fix Go compile error in module import",
+    "expect": [
+      "task:bug-fix",
+      "language:go",
+      "problem:build-error"
+    ],
+    "reject": [
+      "google-workspace",
+      "pytorch"
+    ]
+  },
+  {
+    "name": "api-500",
+    "prompt": "debug API 500 endpoint response mismatch",
+    "expect": [
+      "task:bug-fix",
+      "problem:api-debug"
+    ],
+    "reject": [
+      "api-test-suite-builder"
+    ]
+  },
+  {
+    "name": "react-ui-review",
+    "prompt": "review React UI for accessibility and layout issues",
+    "expect": [
+      "task:code-review",
+      "framework:react"
+    ],
+    "reject": []
+  },
+  {
+    "name": "playwright-test",
+    "prompt": "write Playwright end to end test for login flow",
+    "expect": [
+      "task:testing",
+      "framework:playwright"
+    ],
+    "reject": []
+  },
+  {
+    "name": "database-migration",
+    "prompt": "debug database migration lock and missing index",
+    "expect": [
+      "task:bug-fix",
+      "problem:database-debug"
+    ],
+    "reject": [
+      "schema-designer-only"
+    ]
+  },
+  {
+    "name": "docker-deploy",
+    "prompt": "fix Docker deployment CI/CD production env failure",
+    "expect": [
+      "framework:docker",
+      "problem:deployment-debug"
+    ],
+    "reject": []
+  },
+  {
+    "name": "security-auth",
+    "prompt": "review auth token permission security bug",
+    "expect": [
+      "problem:auth-security"
+    ],
+    "reject": []
+  },
+  {
+    "name": "team-orchestration",
+    "prompt": "orchestrate frontend backend and testing agents for a fullstack feature",
+    "expect": [
+      "workflow:parallel-agents",
+      "role:orchestrator"
+    ],
+    "reject": []
+  },
+  {
+    "name": "quality-gate",
+    "prompt": "run quality gate with lint typecheck tests and coverage",
+    "expect": [
+      "workflow:quality-gate"
+    ],
+    "reject": []
+  },
+  {
+    "name": "preview-web-app",
+    "prompt": "preview web app on local dev server and check localhost",
+    "expect": [
+      "workflow:preview"
+    ],
+    "reject": []
+  },
+  {
+    "name": "context-budget",
+    "prompt": "reduce context tokens and keep only task critical routing info",
+    "expect": [
+      "workflow:context-budget"
+    ],
+    "reject": []
+  },
+  {
+    "name": "legacy-discovery",
+    "prompt": "explore legacy brownfield codebase before refactor",
+    "expect": [
+      "role:explorer"
+    ],
+    "reject": []
+  }
+]

@@ -1,0 +1,23 @@
+.DS_Store
+
+# Local upstream clones and heavy discovery sources
+ai-repos/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Project-local AI runtime artifacts
+**/.ai-dev-system/sessions/
+**/.ai-dev-system/current-task-brief.md
+**/.ai-dev-system/project-dedupe-report.json
+
+# Optional local scratch areas
+tmp/
+temp/

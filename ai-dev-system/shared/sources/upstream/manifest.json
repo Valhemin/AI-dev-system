@@ -1,0 +1,356 @@
+{
+  "entries": [
+    {
+      "upstream": "ai-repos/agent-nestjs-skills/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/agent-nestjs-skills/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/agent-skills/skills/react-best-practices/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/agent-skills/skills/react-best-practices/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/agent-skills/skills/react-native-skills/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/agent-skills/skills/react-native-skills/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/agent-skills/skills/web-design-guidelines/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/agent-skills/skills/web-design-guidelines/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/backend-specialist.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/backend-specialist.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/code-archaeologist.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/code-archaeologist.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/database-architect.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/database-architect.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/devops-engineer.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/devops-engineer.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/frontend-specialist.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/frontend-specialist.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/mobile-developer.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/mobile-developer.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/orchestrator.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/orchestrator.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/qa-automation-engineer.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/qa-automation-engineer.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/agents/security-auditor.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/agents/security-auditor.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/api-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/api-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/app-builder/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/app-builder/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/architecture/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/architecture/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/clean-code/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/clean-code/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/documentation-templates/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/documentation-templates/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/frontend-design/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/frontend-design/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/intelligent-routing/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/intelligent-routing/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/nextjs-react-expert/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/nextjs-react-expert/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/nodejs-best-practices/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/nodejs-best-practices/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/parallel-agents/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/parallel-agents/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/performance-profiling/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/performance-profiling/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/plan-writing/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/plan-writing/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/python-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/python-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/rust-pro/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/rust-pro/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/systematic-debugging/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/tdd-workflow/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/tdd-workflow/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/testing-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/testing-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/skills/webapp-testing/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/skills/webapp-testing/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/create.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/create.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/debug.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/debug.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/deploy.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/deploy.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/orchestrate.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/orchestrate.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/plan.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/plan.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/preview.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/preview.md"
+    },
+    {
+      "upstream": "ai-repos/antigravity-kit/.agent/workflows/test.md",
+      "frozen": "shared/sources/upstream/repos/antigravity-kit/.agent/workflows/test.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-copilot-for-testers/skills/static-code-analysis-typescript/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/awesome-copilot-for-testers/skills/static-code-analysis-typescript/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-cursorrules/rules/angular-typescript-cursorrules-prompt-file/README.md",
+      "frozen": "shared/sources/upstream/repos/awesome-cursorrules/rules/angular-typescript-cursorrules-prompt-file/README.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-cursorrules/rules/javascript-typescript-code-quality-cursorrules-pro/README.md",
+      "frozen": "shared/sources/upstream/repos/awesome-cursorrules/rules/javascript-typescript-code-quality-cursorrules-pro/README.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-cursorrules/rules/python-fastapi-best-practices-cursorrules-prompt-f/README.md",
+      "frozen": "shared/sources/upstream/repos/awesome-cursorrules/rules/python-fastapi-best-practices-cursorrules-prompt-f/README.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-cursorrules/rules/sveltekit-typescript-guide-cursorrules-prompt-file/README.md",
+      "frozen": "shared/sources/upstream/repos/awesome-cursorrules/rules/sveltekit-typescript-guide-cursorrules-prompt-file/README.md"
+    },
+    {
+      "upstream": "ai-repos/awesome-cursorrules/rules/vue-3-nuxt-3-development-cursorrules-prompt-file/README.md",
+      "frozen": "shared/sources/upstream/repos/awesome-cursorrules/rules/vue-3-nuxt-3-development-cursorrules-prompt-file/README.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering-team/code-reviewer/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering-team/code-reviewer/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering-team/playwright-pro/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering-team/playwright-pro/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering/browser-automation/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering/browser-automation/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering/dependency-auditor/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering/dependency-auditor/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering/docker-development/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering/docker-development/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/claude-skills/engineering/sql-database-assistant/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/claude-skills/engineering/sql-database-assistant/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/.opencode/commands/build-fix.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/.opencode/commands/build-fix.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/.opencode/commands/code-review.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/.opencode/commands/code-review.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/.opencode/commands/test-coverage.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/.opencode/commands/test-coverage.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/.opencode/commands/update-docs.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/.opencode/commands/update-docs.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/a11y-architect.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/a11y-architect.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/architect.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/architect.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/build-error-resolver.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/build-error-resolver.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/code-explorer.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/code-explorer.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/code-reviewer.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/code-reviewer.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/doc-updater.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/doc-updater.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/e2e-runner.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/e2e-runner.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/performance-optimizer.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/performance-optimizer.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/planner.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/planner.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/agents/security-reviewer.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/agents/security-reviewer.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/commands/context-budget.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/commands/context-budget.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/commands/multi-execute.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/commands/multi-execute.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/commands/multi-plan.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/commands/multi-plan.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/commands/quality-gate.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/commands/quality-gate.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/commands/verify.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/commands/verify.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/accessibility/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/accessibility/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/agent-introspection-debugging/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/agent-introspection-debugging/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/architecture-decision-records/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/architecture-decision-records/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/codebase-onboarding/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/codebase-onboarding/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/cpp-coding-standards/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/cpp-coding-standards/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/csharp-testing/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/csharp-testing/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/database-migrations/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/database-migrations/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/deployment-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/deployment-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/django-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/django-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/documentation-lookup/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/documentation-lookup/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/e2e-testing/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/e2e-testing/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/git-workflow/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/git-workflow/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/golang-patterns/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/golang-patterns/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/java-coding-standards/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/java-coding-standards/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/laravel-security/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/laravel-security/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/repo-scan/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/repo-scan/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/search-first/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/search-first/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/everything-claude-code/skills/security-review/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/everything-claude-code/skills/security-review/SKILL.md"
+    },
+    {
+      "upstream": "ai-repos/openai-skills/skills/.curated/security-ownership-map/SKILL.md",
+      "frozen": "shared/sources/upstream/repos/openai-skills/skills/.curated/security-ownership-map/SKILL.md"
+    }
+  ]
+}

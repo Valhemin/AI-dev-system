@@ -1,0 +1,12 @@
+name: ai-dev-system
+entry: AI_ENTRY.md
+rules:
+  - choose quick hybrid full first
+  - route first
+  - use language router
+  - answer in user language
+  - use skill index
+  - selected skills only
+  - minimal diff
+  - self check after compaction
+

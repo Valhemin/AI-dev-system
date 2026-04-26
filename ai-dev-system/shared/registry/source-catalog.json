@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "agent-nestjs-skills",
+    "local_path": "shared/sources/upstream/repos/agent-nestjs-skills",
+    "priority": 60,
+    "skill_count": 1,
+    "doc_count": 45
+  },
+  {
+    "repo": "agent-skills",
+    "local_path": "shared/sources/upstream/repos/agent-skills",
+    "priority": 82,
+    "skill_count": 7,
+    "doc_count": 137
+  },
+  {
+    "repo": "antigravity-kit",
+    "local_path": "shared/sources/upstream/repos/antigravity-kit",
+    "priority": 90,
+    "skill_count": 48,
+    "doc_count": 82
+  },
+  {
+    "repo": "awesome-copilot-for-testers",
+    "local_path": "shared/sources/upstream/repos/awesome-copilot-for-testers",
+    "priority": 72,
+    "skill_count": 20,
+    "doc_count": 75
+  },
+  {
+    "repo": "awesome-cursorrules",
+    "local_path": "shared/sources/upstream/repos/awesome-cursorrules",
+    "priority": 62,
+    "skill_count": 0,
+    "doc_count": 1255
+  },
+  {
+    "repo": "claude-skills",
+    "local_path": "shared/sources/upstream/repos/claude-skills",
+    "priority": 68,
+    "skill_count": 540,
+    "doc_count": 726
+  },
+  {
+    "repo": "everything-claude-code",
+    "local_path": "shared/sources/upstream/repos/everything-claude-code",
+    "priority": 120,
+    "skill_count": 459,
+    "doc_count": 1237
+  },
+  {
+    "repo": "openai-skills",
+    "local_path": "shared/sources/upstream/repos/openai-skills",
+    "priority": 85,
+    "skill_count": 43,
+    "doc_count": 112
+  }
+]
