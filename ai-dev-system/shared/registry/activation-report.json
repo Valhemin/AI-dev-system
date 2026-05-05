@@ -1,670 +1,154 @@
 {
-  "generated_at": 1777205654.7149682,
+  "generated_at": 1777965804.237013,
   "preferred_upstream": "everything-claude-code",
-  "active_skills": 102,
-  "catalog_items": 10074,
+  "active_skills": 111,
+  "catalog_items": 0,
   "active_review_count": 2,
-  "catalog_review_count": 1273,
+  "catalog_review_count": 0,
   "top_active": [
     {
       "id": "role:orchestrator",
       "path": "team-dev/roles/orchestrator.md",
       "category": "role",
-      "activation_rank": 207,
+      "activation_rank": 209,
       "health": "ok"
     },
     {
       "id": "role:backend-specialist",
       "path": "team-dev/roles/backend-specialist.md",
       "category": "role",
-      "activation_rank": 203,
+      "activation_rank": 205,
       "health": "ok"
     },
     {
       "id": "role:devops-engineer",
       "path": "team-dev/roles/devops-engineer.md",
       "category": "role",
-      "activation_rank": 195,
-      "health": "ok"
-    },
-    {
-      "id": "role:explorer",
-      "path": "team-dev/roles/explorer.md",
-      "category": "role",
-      "activation_rank": 193,
+      "activation_rank": 197,
       "health": "ok"
     },
     {
       "id": "role:frontend-specialist",
       "path": "team-dev/roles/frontend-specialist.md",
       "category": "role",
-      "activation_rank": 193,
+      "activation_rank": 195,
       "health": "ok"
     },
     {
       "id": "role:code-archaeologist",
       "path": "team-dev/roles/code-archaeologist.md",
       "category": "role",
-      "activation_rank": 191,
+      "activation_rank": 193,
       "health": "ok"
     },
     {
       "id": "role:qa-automation",
       "path": "team-dev/roles/qa-automation.md",
       "category": "role",
-      "activation_rank": 191,
-      "health": "ok"
-    },
-    {
-      "id": "role:project-planner",
-      "path": "team-dev/roles/project-planner.md",
-      "category": "role",
-      "activation_rank": 189,
+      "activation_rank": 193,
       "health": "ok"
     },
     {
       "id": "role:database-architect",
       "path": "team-dev/roles/database-architect.md",
       "category": "role",
-      "activation_rank": 187,
+      "activation_rank": 189,
+      "health": "ok"
+    },
+    {
+      "id": "role:explorer",
+      "path": "team-dev/roles/explorer.md",
+      "category": "role",
+      "activation_rank": 189,
       "health": "ok"
     },
     {
       "id": "role:security-auditor",
       "path": "team-dev/roles/security-auditor.md",
       "category": "role",
-      "activation_rank": 187,
+      "activation_rank": 189,
+      "health": "ok"
+    },
+    {
+      "id": "role:project-planner",
+      "path": "team-dev/roles/project-planner.md",
+      "category": "role",
+      "activation_rank": 185,
       "health": "ok"
     },
     {
       "id": "workflow:search-first",
       "path": "shared/workflows/search-first.md",
       "category": "workflow",
-      "activation_rank": 183,
+      "activation_rank": 179,
       "health": "ok"
     },
     {
       "id": "workflow:code-review",
       "path": "shared/workflows/code-review.md",
       "category": "workflow",
-      "activation_rank": 180,
+      "activation_rank": 176,
       "health": "ok"
     },
     {
       "id": "workflow:documentation-lookup",
       "path": "shared/workflows/documentation-lookup.md",
       "category": "workflow",
-      "activation_rank": 180,
+      "activation_rank": 176,
+      "health": "ok"
+    },
+    {
+      "id": "framework:playwright",
+      "path": "solo-dev/skills/framework/playwright/SKILL.md",
+      "category": "framework",
+      "activation_rank": 173,
       "health": "ok"
     },
     {
       "id": "workflow:test-coverage",
       "path": "shared/workflows/test-coverage.md",
       "category": "workflow",
-      "activation_rank": 176,
+      "activation_rank": 172,
       "health": "ok"
     },
     {
       "id": "workflow:quality-gate",
       "path": "shared/workflows/quality-gate.md",
       "category": "workflow",
-      "activation_rank": 175,
+      "activation_rank": 171,
       "health": "ok"
     },
     {
       "id": "workflow:update-docs",
       "path": "shared/workflows/update-docs.md",
       "category": "workflow",
-      "activation_rank": 175,
+      "activation_rank": 171,
       "health": "ok"
     },
     {
       "id": "workflow:build-fix",
       "path": "shared/workflows/build-fix.md",
       "category": "workflow",
-      "activation_rank": 174,
+      "activation_rank": 170,
+      "health": "ok"
+    },
+    {
+      "id": "framework:react",
+      "path": "solo-dev/skills/framework/react/SKILL.md",
+      "category": "framework",
+      "activation_rank": 169,
       "health": "ok"
     },
     {
       "id": "problem:deployment-debug",
       "path": "solo-dev/skills/problem/deployment-debug/SKILL.md",
       "category": "problem",
-      "activation_rank": 173,
-      "health": "ok"
-    },
-    {
-      "id": "task:e2e-testing",
-      "path": "solo-dev/skills/task/e2e-testing/SKILL.md",
-      "category": "task",
-      "activation_rank": 171,
-      "health": "ok"
-    },
-    {
-      "id": "role:code-reviewer",
-      "path": "team-dev/roles/code-reviewer.md",
-      "category": "role",
-      "activation_rank": 170,
+      "activation_rank": 169,
       "health": "ok"
     }
   ],
-  "top_catalog": [
-    {
-      "id": "workflow:everything-claude-code-codebase-onboarding-a37d98b3b8",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/codebase-onboarding/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 218,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-backend-specialist-3fc345e4d8",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/backend-specialist.md",
-      "category": "role",
-      "activation_rank": 203,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-repo-scan-99d7a2142d",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/repo-scan/SKILL.md",
-      "category": "task",
-      "activation_rank": 201,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-database-migrations-3bf9c347d9",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/database-migrations/SKILL.md",
-      "category": "task",
-      "activation_rank": 198,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:everything-claude-code-deployment-patterns-b789093e2e",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/deployment-patterns/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 198,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:everything-claude-code-performance-optimizer-ff10f09f4d",
-      "source_repo": "everything-claude-code",
-      "source_path": "agents/performance-optimizer.md",
-      "category": "role",
-      "activation_rank": 196,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-devops-engineer-1f96064760",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/devops-engineer.md",
-      "category": "role",
-      "activation_rank": 195,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:agent-skills-react-best-practices-9cef2b0b34",
-      "source_repo": "agent-skills",
-      "source_path": "skills/react-best-practices/SKILL.md",
-      "category": "task",
-      "activation_rank": 195,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:agent-nestjs-skills-item-9fbfba8061",
-      "source_repo": "agent-nestjs-skills",
-      "source_path": "SKILL.md",
-      "category": "task",
-      "activation_rank": 194,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-csharp-testing-b804336fa0",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/csharp-testing/SKILL.md",
-      "category": "task",
-      "activation_rank": 194,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-intelligent-routing-ee7742043a",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/intelligent-routing/SKILL.md",
-      "category": "task",
-      "activation_rank": 192,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-rust-pro-8c3e03b622",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/rust-pro/SKILL.md",
-      "category": "task",
-      "activation_rank": 192,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-webapp-testing-e472bd2b85",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/webapp-testing/SKILL.md",
-      "category": "task",
-      "activation_rank": 192,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-qa-automation-engineer-6bf4cf6597",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/qa-automation-engineer.md",
-      "category": "role",
-      "activation_rank": 191,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-nextjs-react-expert-b36d740fb8",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/nextjs-react-expert/SKILL.md",
-      "category": "task",
-      "activation_rank": 191,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:everything-claude-code-search-first-f405587920",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/search-first/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 190,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-frontend-specialist-f64c3fba8c",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/frontend-specialist.md",
-      "category": "role",
-      "activation_rank": 189,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-code-archaeologist-c822c74998",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/code-archaeologist.md",
-      "category": "role",
-      "activation_rank": 187,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-orchestrator-94e4c5303f",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/orchestrator.md",
-      "category": "role",
-      "activation_rank": 187,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-clean-code-5484fded59",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/clean-code/SKILL.md",
-      "category": "task",
-      "activation_rank": 187,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-accessibility-4910a27044",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/accessibility/SKILL.md",
-      "category": "task",
-      "activation_rank": 187,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:openai-skills-security-ownership-map-629f4d4207",
-      "source_repo": "openai-skills",
-      "source_path": "skills/.curated/security-ownership-map/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 187,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-java-coding-standards-30f81810ed",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/java-coding-standards/SKILL.md",
-      "category": "task",
-      "activation_rank": 186,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:everything-claude-code-git-workflow-910b6c626f",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/git-workflow/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 186,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:everything-claude-code-a11y-architect-80f4baacca",
-      "source_repo": "everything-claude-code",
-      "source_path": "agents/a11y-architect.md",
-      "category": "role",
-      "activation_rank": 185,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-cpp-coding-standards-01f99bfbb7",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/cpp-coding-standards/SKILL.md",
-      "category": "task",
-      "activation_rank": 184,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-security-auditor-2f34d77eba",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/security-auditor.md",
-      "category": "role",
-      "activation_rank": 183,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:antigravity-kit-testing-patterns-6bfd64865d",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/testing-patterns/SKILL.md",
-      "category": "task",
-      "activation_rank": 183,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:everything-claude-code-architecture-decision-records-da7f50db37",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/architecture-decision-records/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 182,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-database-architect-35a0c66c51",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/database-architect.md",
-      "category": "role",
-      "activation_rank": 181,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:awesome-copilot-for-testers-static-code-analysis-typescript-b615f03395",
-      "source_repo": "awesome-copilot-for-testers",
-      "source_path": "skills/static-code-analysis-typescript/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 181,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:antigravity-kit-mobile-developer-b3e9ca1e87",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/agents/mobile-developer.md",
-      "category": "role",
-      "activation_rank": 176,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-documentation-lookup-a453c3f929",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/documentation-lookup/SKILL.md",
-      "category": "task",
-      "activation_rank": 176,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "task:everything-claude-code-laravel-security-61038c8877",
-      "source_repo": "everything-claude-code",
-      "source_path": "skills/laravel-security/SKILL.md",
-      "category": "task",
-      "activation_rank": 176,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:antigravity-kit-frontend-design-3a4b0c3484",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/frontend-design/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 176,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:antigravity-kit-systematic-debugging-74977b50fa",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/systematic-debugging/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 175,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "role:everything-claude-code-code-explorer-5dd09c8825",
-      "source_repo": "everything-claude-code",
-      "source_path": "agents/code-explorer.md",
-      "category": "role",
-      "activation_rank": 174,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:antigravity-kit-app-builder-ea7d77a30a",
-      "source_repo": "antigravity-kit",
-      "source_path": ".agent/skills/app-builder/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 174,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "workflow:agent-skills-web-design-guidelines-c65ed20272",
-      "source_repo": "agent-skills",
-      "source_path": "skills/web-design-guidelines/SKILL.md",
-      "category": "workflow",
-      "activation_rank": 172,
-      "health": "ok",
-      "active": true
-    },
-    {
-      "id": "language:claude-skills-dependency-auditor-4d32202182",
-      "source_repo": "claude-skills",
-      "source_path": "engineering/dependency-auditor/SKILL.md",
-      "category": "language",
-      "activation_rank": 170,
-      "health": "ok",
-      "active": true
-    }
-  ],
+  "top_catalog": [],
   "review_hotspots": [
-    {
-      "id": "workflow:antigravity-kit-deploy-1fa2033781",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/deploy.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 170
-    },
-    {
-      "id": "workflow:antigravity-kit-orchestrate-ee1d7fbe35",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/orchestrate.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 170
-    },
-    {
-      "id": "workflow:everything-claude-code-code-review-d0e0f92a82",
-      "source_repo": "everything-claude-code",
-      "path": ".opencode/commands/code-review.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 168
-    },
-    {
-      "id": "workflow:everything-claude-code-update-docs-978789dca7",
-      "source_repo": "everything-claude-code",
-      "path": ".opencode/commands/update-docs.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 160
-    },
-    {
-      "id": "workflow:everything-claude-code-build-fix-e51e5a7e5b",
-      "source_repo": "everything-claude-code",
-      "path": ".opencode/commands/build-fix.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 157
-    },
-    {
-      "id": "workflow:everything-claude-code-multi-execute-a1ae7cfe4a",
-      "source_repo": "everything-claude-code",
-      "path": "commands/multi-execute.md",
-      "issues": [
-        "missing-trigger",
-        "tool-specific-review"
-      ],
-      "activation_rank": 156
-    },
-    {
-      "id": "workflow:antigravity-kit-test-20cad75d9f",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/test.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 155
-    },
-    {
-      "id": "workflow:antigravity-kit-create-cc27dc17ca",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/create.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 153
-    },
-    {
-      "id": "workflow:everything-claude-code-multi-plan-06b384041c",
-      "source_repo": "everything-claude-code",
-      "path": "commands/multi-plan.md",
-      "issues": [
-        "missing-trigger",
-        "tool-specific-review"
-      ],
-      "activation_rank": 153
-    },
-    {
-      "id": "workflow:everything-claude-code-test-coverage-7e814293d7",
-      "source_repo": "everything-claude-code",
-      "path": ".opencode/commands/test-coverage.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 153
-    },
-    {
-      "id": "framework:agent-skills-react-native-skills-eccc9830b9",
-      "source_repo": "agent-skills",
-      "path": "skills/react-native-skills/SKILL.md",
-      "issues": [
-        "missing-description"
-      ],
-      "activation_rank": 152
-    },
-    {
-      "id": "workflow:everything-claude-code-verify-bd00ef7ee5",
-      "source_repo": "everything-claude-code",
-      "path": "commands/verify.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 151
-    },
-    {
-      "id": "workflow:antigravity-kit-debug-61fe7d9fea",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/debug.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 147
-    },
-    {
-      "id": "workflow:antigravity-kit-plan-76c017f9a9",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/plan.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 144
-    },
-    {
-      "id": "workflow:antigravity-kit-preview-a445cc9560",
-      "source_repo": "antigravity-kit",
-      "path": ".agent/workflows/preview.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 139
-    },
-    {
-      "id": "workflow:everything-claude-code-context-budget-d03bf3724f",
-      "source_repo": "everything-claude-code",
-      "path": "commands/context-budget.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 136
-    },
-    {
-      "id": "workflow:awesome-cursorrules-readme-0083176560",
-      "source_repo": "awesome-cursorrules",
-      "path": "rules/vue-3-nuxt-3-development-cursorrules-prompt-file/README.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 134
-    },
     {
       "id": "language:ruby",
       "source_repo": "active-core",
@@ -676,42 +160,6 @@
       "activation_rank": 128
     },
     {
-      "id": "workflow:awesome-cursorrules-readme-9a9c6fa01c",
-      "source_repo": "awesome-cursorrules",
-      "path": "rules/sveltekit-typescript-guide-cursorrules-prompt-file/README.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 128
-    },
-    {
-      "id": "workflow:awesome-cursorrules-readme-bdc9c64ddf",
-      "source_repo": "awesome-cursorrules",
-      "path": "rules/javascript-typescript-code-quality-cursorrules-pro/README.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 126
-    },
-    {
-      "id": "workflow:awesome-cursorrules-readme-c567da3b18",
-      "source_repo": "awesome-cursorrules",
-      "path": "rules/angular-typescript-cursorrules-prompt-file/README.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 126
-    },
-    {
-      "id": "workflow:awesome-cursorrules-readme-612bf3fd98",
-      "source_repo": "awesome-cursorrules",
-      "path": "rules/python-fastapi-best-practices-cursorrules-prompt-f/README.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 124
-    },
-    {
       "id": "problem:async-debug",
       "source_repo": "active-core",
       "path": "solo-dev/skills/problem/async-debug/SKILL.md",
@@ -720,185 +168,10 @@
         "generated-fallback-review-needed"
       ],
       "activation_rank": 120
-    },
-    {
-      "id": "workflow:everything-claude-code-quality-gate-7dac32b4b8",
-      "source_repo": "everything-claude-code",
-      "path": "commands/quality-gate.md",
-      "issues": [
-        "missing-trigger",
-        "tool-specific-review"
-      ],
-      "activation_rank": 100
-    },
-    {
-      "id": "workflow:everything-claude-code-prompt-optimizer-2c306d5ad8",
-      "source_repo": "everything-claude-code",
-      "path": "skills/prompt-optimizer/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 83
-    },
-    {
-      "id": "task:everything-claude-code-project-guidelines-example-73fc654159",
-      "source_repo": "everything-claude-code",
-      "path": "docs/ja-JP/skills/project-guidelines-example/SKILL.md",
-      "issues": [
-        "missing-description"
-      ],
-      "activation_rank": 82
-    },
-    {
-      "id": "workflow:everything-claude-code-tdd-workflow-4f0e360603",
-      "source_repo": "everything-claude-code",
-      "path": ".kiro/skills/tdd-workflow/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 80
-    },
-    {
-      "id": "workflow:everything-claude-code-test-coverage-ee1937249a",
-      "source_repo": "everything-claude-code",
-      "path": "commands/test-coverage.md",
-      "issues": [
-        "missing-trigger"
-      ],
-      "activation_rank": 80
-    },
-    {
-      "id": "workflow:claude-skills-init-a4278e9326",
-      "source_repo": "claude-skills",
-      "path": ".gemini/skills/init/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 77
-    },
-    {
-      "id": "workflow:everything-claude-code-update-docs-f3288a5fcd",
-      "source_repo": "everything-claude-code",
-      "path": "commands/update-docs.md",
-      "issues": [
-        "missing-trigger"
-      ],
-      "activation_rank": 76
-    },
-    {
-      "id": "workflow:claude-skills-code-to-prd-fb8ed1eec2",
-      "source_repo": "claude-skills",
-      "path": ".gemini/skills/code-to-prd/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 75
-    },
-    {
-      "id": "task:everything-claude-code-verification-loop-374cb3b17a",
-      "source_repo": "everything-claude-code",
-      "path": ".kiro/skills/verification-loop/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 73
-    },
-    {
-      "id": "workflow:everything-claude-code-refactor-clean-4741a48c16",
-      "source_repo": "everything-claude-code",
-      "path": "commands/refactor-clean.md",
-      "issues": [
-        "missing-trigger"
-      ],
-      "activation_rank": 73
-    },
-    {
-      "id": "workflow:everything-claude-code-docker-patterns-d02e320681",
-      "source_repo": "everything-claude-code",
-      "path": ".kiro/skills/docker-patterns/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 72
-    },
-    {
-      "id": "workflow:everything-claude-code-orchestrate-7c7f190e37",
-      "source_repo": "everything-claude-code",
-      "path": ".opencode/commands/orchestrate.md",
-      "issues": [
-        "tool-specific-review"
-      ],
-      "activation_rank": 72
-    },
-    {
-      "id": "workflow:claude-skills-coverage-c6208069de",
-      "source_repo": "claude-skills",
-      "path": ".gemini/skills/coverage/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 71
-    },
-    {
-      "id": "workflow:everything-claude-code-pm2-86bb008a51",
-      "source_repo": "everything-claude-code",
-      "path": "commands/pm2.md",
-      "issues": [
-        "missing-trigger",
-        "tool-specific-review",
-        "vague-trigger"
-      ],
-      "activation_rank": 71
-    },
-    {
-      "id": "task:everything-claude-code-coding-standards-8b2bcd54c4",
-      "source_repo": "everything-claude-code",
-      "path": ".kiro/skills/coding-standards/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 70
-    },
-    {
-      "id": "workflow:everything-claude-code-update-codemaps-6d94cab41b",
-      "source_repo": "everything-claude-code",
-      "path": "commands/update-codemaps.md",
-      "issues": [
-        "missing-trigger"
-      ],
-      "activation_rank": 70
-    },
-    {
-      "id": "workflow:awesome-copilot-dependabot-1b40c865ec",
-      "source_repo": "awesome-copilot",
-      "path": "skills/dependabot/SKILL.md",
-      "issues": [
-        "vague-trigger"
-      ],
-      "activation_rank": 69
     }
   ],
-  "pack_pressure": {
-    "frontend": 8611,
-    "fullstack": 8303,
-    "backend": 5695,
-    "security": 4908,
-    "workflows": 4818,
-    "rules": 4041,
-    "testing": 3771,
-    "product": 3616,
-    "roles": 2730,
-    "devops": 2070
-  },
+  "pack_pressure": {},
   "active_source_mix": {
-    "everything-claude-code": 41,
-    "antigravity-kit": 34,
-    "active-core": 10,
-    "claude-skills": 6,
-    "awesome-cursorrules": 5,
-    "agent-skills": 3,
-    "agent-nestjs-skills": 1,
-    "awesome-copilot-for-testers": 1,
-    "openai-skills": 1
+    "active-core": 111
   }
 }

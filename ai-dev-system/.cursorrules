@@ -1,0 +1,15 @@
+Use ai-dev-system.
+
+Primary entry:
+.ai-dev-system/AI_ENTRY.md
+
+Rules:
+- **Autonomous**: Run `ai-dev project-work` for new tasks and `ai-dev save-session` when done.
+- choose QUICK / HYBRID / FULL first
+- use LANGUAGE_ROUTER
+- use SKILL_INDEX before full skills
+- selected skills only
+- minimal diff
+- answer in user language
+- run SELF_CHECK after compaction or drift
+
