@@ -1,0 +1,18 @@
+{
+  "project_name": ".ai-system",
+  "last_updated": "2026-05-05T07:04:05.388517+00:00",
+  "stable_facts": {
+    "stacks": [],
+    "frameworks": [],
+    "entry_points": [],
+    "commands": {},
+    "naming_style": "kebab-case"
+  },
+  "current_focus": [],
+  "known_risks": [],
+  "preferred_commands": {},
+  "project_specific_rules": [],
+  "notes": [
+    "Update this file when the project gains new conventions, critical workflows, or known sharp edges."
+  ]
+}

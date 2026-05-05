@@ -104,7 +104,7 @@ def main() -> None:
 
     updated = {
         "project_name": memory.get("project_name") or project_root.name,
-        "last_updated": dt.datetime.now(dt.UTC).isoformat(),
+        "last_updated": dt.datetime.now(dt.timezone.utc).isoformat(),
         "stable_facts": stable_facts,
         "current_focus": memory.get("current_focus", []),
         "known_risks": sorted(set(memory.get("known_risks", []) + detect_known_risks(manifest, project_root))),

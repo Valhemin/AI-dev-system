@@ -42,10 +42,17 @@ If you only want the shortest practical version:
 
 1. Copy `ai-dev-system/` into your repository root.
 2. Run `./ai-dev-system/bin/ai-dev project-setup all`
-3. Run `./ai-dev-system/bin/ai-dev project-work "describe the task"`
-4. Ask your AI to work from the repo root and use the generated project context
+3. **Just Chat**: AI is now autonomous. It will automatically:
+   - Run `project-work` to sync context when you describe a task.
+   - Use `advanced-reasoning-cot` for complex logic.
+   - Run `save-session` to persist memory when done.
 
-That is enough to get most of the value out of the system.
+## Autonomous AI Operations
+
+Unlike generic assistants, this system empowers AI to manage its own lifecycle:
+- **Self-Briefing**: AI detects new tasks and runs `ai-dev project-work` to prepare.
+- **Self-Memory**: AI runs `ai-dev save-session` to ensure continuity.
+- **Skill Selection**: AI triggers Anthropic reasoning or Context pruning as needed.
 
 ## Why This Exists
 

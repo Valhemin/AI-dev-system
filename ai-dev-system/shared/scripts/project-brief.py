@@ -126,6 +126,16 @@ def find_skill(skills: list[dict], skill_id: str) -> dict | None:
 def infer_task_ids(task: str) -> list[str]:
     q = task.lower()
     picks = []
+    if any(word in q for word in ["fix", "error", "fail", "broken", "healing"]):
+        picks.append("autonomous:self-healing")
+    if any(word in q for word in ["pr", "pull request", "commit", "changelog"]):
+        picks.append("autonomous:pr-architect")
+    if any(word in q for word in ["audit", "smell", "solid", "debt"]):
+        picks.append("autonomous:tech-debt-audit")
+    if any(word in q for word in ["mcp", "model context protocol", "mcp server"]):
+        picks.append("anthropic:mcp-server-gen")
+    if any(word in q for word in ["excel", "csv", "dataset", "data analysis", "pandas"]):
+        picks.append("anthropic:complex-data-analysis")
     if any(word in q for word in ["accessibility", "a11y", "wcag", "aria", "screen reader", "keyboard navigation"]):
         picks.append("task:accessibility")
     if any(word in q for word in ["bug", "debug", "fix", "broken", "error"]):
@@ -171,6 +181,10 @@ def infer_problem_id(task: str) -> str:
 def infer_workflow_ids(task: str, complexity: str) -> list[str]:
     q = task.lower()
     picks = ["workflow:task-briefing"]
+    if complexity in {"complex", "critical"} or any(word in q for word in ["reasoning", "think deep", "complex bug"]):
+        picks.append("anthropic:advanced-reasoning-cot")
+    if any(word in q for word in ["context", "token", "prune", "clean history"]):
+        picks.append("context:context-pruning")
     if any(word in q for word in ["e2e", "end-to-end", "playwright", "user journey"]):
         picks.append("workflow:test")
     elif any(word in q for word in ["accessibility", "a11y", "wcag", "aria"]):

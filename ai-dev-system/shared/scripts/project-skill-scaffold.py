@@ -59,7 +59,7 @@ def refresh_custom_skill_index(project_root: Path) -> None:
             }
         )
     out = {
-        "generated_at": dt.datetime.now(dt.UTC).isoformat(),
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "skills": items,
         "policy": "Use project-local skills only for repo-specific behavior not already covered by active core.",
     }

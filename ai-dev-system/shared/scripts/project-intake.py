@@ -307,7 +307,7 @@ def build_custom_skill_index(project_root: Path) -> dict:
             }
         )
     return {
-        "generated_at": dt.datetime.now(dt.UTC).isoformat(),
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "skills": items,
         "policy": "Use project-local skills only for repo-specific behavior not already covered by active core.",
     }
@@ -337,7 +337,7 @@ def main() -> None:
 
     manifest = {
         "project_root": str(project_root),
-        "generated_at": dt.datetime.now(dt.UTC).isoformat(),
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "stacks": stacks,
         "frameworks": frameworks,
         "manifests": manifests,
@@ -361,7 +361,7 @@ def main() -> None:
     if not memory_path.exists():
         memory = {
             "project_name": project_root.name,
-            "last_updated": dt.datetime.now(dt.UTC).isoformat(),
+            "last_updated": dt.datetime.now(dt.timezone.utc).isoformat(),
             "stable_facts": {
                 "stacks": stacks,
                 "frameworks": frameworks,

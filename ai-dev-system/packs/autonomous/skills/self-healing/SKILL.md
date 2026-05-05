@@ -62,7 +62,6 @@ Lean active-core index. Load one selected SKILL.md only. If no active skill fits
 - autonomous:self-healing: Automatically fixes build, test, and lint errors in a loop until success. (packs/autonomous/skills/self-healing/SKILL.md)
 - autonomous:pr-architect: Generates professional PR descriptions, commit messages, and changelogs. (packs/autonomous/skills/pr-architect/SKILL.md)
 - autonomous:tech-debt-audit: Audits code for smells, SOLID violations, and technical debt. (packs/autonomous/skills/tech-debt-audit/SKILL.md)
-- autonomous:self-evolution: Allows the AI to suggest and implement improvements to the ai-dev-system itself. (packs/autonomous/skills/self-evolution/SKILL.md)
 - workflow:intelligent-routing: Automatic agent selection and intelligent task routing. Analyzes user requests and automatically selects the best specialist agent(s) without requiring explicit user mentions. (solo-dev/skills/workflow/intelligent-routing/SKILL.md)
 - workflow:parallel-agents: Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives. (solo-dev/skills/workflow/parallel-agents/SKILL.md)
 - workflow:task-briefing: Lightweight pre-task briefing. Use before non-trivial work to classify task complexity, read the right project docs first, and choose the smallest sufficient set of skills, workflows, and roles. (solo-dev/skills/workflow/task-briefing/SKILL.md)

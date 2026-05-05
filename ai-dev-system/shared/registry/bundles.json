@@ -1,95 +1,49 @@
 {
-  "generated_by": "manual-curation",
   "bundles": {
     "project-aware-core": {
       "description": "Minimal intake bundle for understanding a repository before changing code.",
-      "items": [
-        "task:codebase-onboarding",
-        "task:repo-scan-lite",
-        "workflow:task-briefing",
-        "workflow:search-first"
-      ]
+      "items": ["task:codebase-onboarding", "task:repo-scan-lite", "workflow:task-briefing", "workflow:search-first"]
     },
     "implementation-core": {
       "description": "Default coding bundle for feature work, refactors, and bug fixes.",
-      "items": [
-        "task:feature-dev",
-        "task:bug-fix",
-        "task:refactor",
-        "workflow:verify"
-      ]
+      "items": ["task:feature-dev", "task:bug-fix", "task:refactor", "workflow:verify"]
     },
     "quality-suite": {
       "description": "Review, testing, and verification bundle for risky or user-facing changes.",
-      "items": [
-        "task:accessibility",
-        "task:code-review",
-        "task:e2e-testing",
-        "task:testing",
-        "task:webapp-testing",
-        "workflow:code-review",
-        "workflow:test-coverage",
-        "workflow:quality-gate",
-        "role:a11y-architect",
-        "role:e2e-runner",
-        "role:reviewer",
-        "role:qa-engineer",
-        "role:code-reviewer"
-      ]
+      "items": ["task:accessibility", "task:code-review", "task:e2e-testing", "task:testing", "task:webapp-testing", "workflow:code-review", "workflow:test-coverage", "workflow:quality-gate", "role:a11y-architect", "role:e2e-runner", "role:reviewer", "role:qa-engineer", "role:code-reviewer"]
     },
     "architecture-and-adr": {
       "description": "Architecture planning and decision-record bundle for cross-cutting changes.",
-      "items": [
-        "task:architecture",
-        "task:architecture-decision-records",
-        "task:plan-writing",
-        "workflow:plan",
-        "role:architect",
-        "role:tech-lead"
-      ]
+      "items": ["task:architecture", "task:architecture-decision-records", "task:plan-writing", "workflow:plan", "role:architect", "role:tech-lead"]
     },
     "performance-and-debug": {
       "description": "Performance and debugging bundle for slow paths, flaky behavior, and hard failures.",
-      "items": [
-        "problem:performance-debug",
-        "problem:build-error",
-        "problem:dependency-debug",
-        "workflow:debug",
-        "workflow:build-fix",
-        "role:debugger",
-        "role:performance-optimizer",
-        "role:build-error-resolver"
-      ]
+      "items": ["problem:performance-debug", "problem:build-error", "problem:dependency-debug", "workflow:debug", "workflow:build-fix", "role:debugger", "role:performance-optimizer", "role:build-error-resolver"]
     },
     "docs-and-handoff": {
       "description": "Documentation and continuity bundle for runbooks, onboarding, and long tasks.",
-      "items": [
-        "task:documentation",
-        "workflow:working-memory",
-        "workflow:documentation-lookup",
-        "workflow:update-docs",
-        "role:documentation-writer",
-        "role:doc-updater"
-      ]
+      "items": ["task:documentation", "workflow:working-memory", "workflow:documentation-lookup", "workflow:update-docs", "role:documentation-writer", "role:doc-updater"]
     },
     "mobile-delivery": {
       "description": "Mobile-focused bundle for React Native or broader mobile work.",
-      "items": [
-        "framework:react-native",
-        "task:testing",
-        "workflow:verify",
-        "role:mobile-developer",
-        "role:qa-automation"
-      ]
+      "items": ["framework:react-native", "task:testing", "workflow:verify", "role:mobile-developer", "role:qa-automation"]
     },
     "team-orchestration": {
       "description": "Use when the work really benefits from multiple specialists.",
-      "items": [
-        "workflow:parallel-agents",
-        "workflow:orchestrate",
-        "role:orchestrator",
-        "role:project-planner"
-      ]
+      "items": ["workflow:parallel-agents", "workflow:orchestrate", "role:orchestrator", "role:project-planner"]
+    },
+    "advanced-reasoning": {
+      "description": "Advanced logic and data analysis bundle for complex problems.",
+      "items": ["anthropic:advanced-reasoning-cot", "anthropic:complex-data-analysis", "anthropic:mcp-server-gen"]
+    },
+    "context-management": {
+      "description": "Context optimization and token-saving bundle.",
+      "items": ["context:context-pruning", "workflow:context-budget"]
+    },
+    "autonomous-ops": {
+      "description": "Autonomous self-healing, PR management, and tech debt auditing.",
+      "items": ["autonomous:self-healing", "autonomous:pr-architect", "autonomous:tech-debt-audit"]
     }
-  }
+  },
+  "generated_by": "manual-curation"
 }

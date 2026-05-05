@@ -38,7 +38,7 @@ def main() -> None:
     sessions_dir = ai_dir / "sessions"
     sessions_dir.mkdir(parents=True, exist_ok=True)
 
-    now = dt.datetime.now(dt.UTC)
+    now = dt.datetime.now(dt.timezone.utc)
     stamp = now.strftime("%Y-%m-%d-%H%M%S")
     changed = git_changed_files(project_root)
     session = {

@@ -4,24 +4,22 @@
 
 1. Use LANGUAGE_ROUTER.
 2. Use MODE_ROUTER to select QUICK / HYBRID / FULL.
-3. Respect explicit user request:
-   - if user says solo-dev, avoid FULL unless high-risk
-   - if user says team-dev, use FULL or HYBRID-team depending on scope
-4. Detect intent.
-5. Detect stack.
-6. Detect problem.
-7. Detect optional workflow and role.
-8. Read SKILL_INDEX.
-9. Select:
+3. **Complexity Check**: If task involves architecture, security, or >3 files, trigger `advanced-reasoning-cot`.
+4. **Autonomous Ops**: 
+   - If build/test fails, trigger `self-healing`.
+   - If task is complete, trigger `pr-architect`.
+   - If code quality is a concern, trigger `tech-debt-audit`.
+5. **Context Check**: If history > 10k tokens, trigger `context-pruning`.
+5. Respect explicit user request.
+6. Detect intent, stack, and problem.
+7. Read SKILL_INDEX.
+8. Select:
    - max 1 task skill
-   - max 1 stack skill: language or framework
+   - max 1 stack skill
    - max 1 problem skill
    - max 1 role for FULL/team mode
-   - optional workflow
-10. If request says plan, orchestrate, team, multi-agent, review, test, preview, quality gate, verify, or context budget, inspect workflow/role packs before leaf inventory.
-11. If no active core item fits, inspect relevant packs/*/catalog.json.
-12. Load leaf inventory item only after pack catalog selection.
-13. Load full SKILL.md or active role/workflow only after selection.
+9. If request says plan, orchestrate, team, multi-agent, review, test, preview, quality gate, verify, or context budget, inspect workflow/role packs before leaf inventory.
+10. Load full SKILL.md or active role/workflow only after selection.
 
 ## Intent list
 

@@ -66,6 +66,7 @@ case "$cmd" in
     fi
     "$SYSTEM_ROOT/shared/scripts/install-project.sh" "$SYSTEM_ROOT" "$project" "$tool"
     run_project_sync_steps "$project"
+    python3 "$SYSTEM_ROOT/shared/scripts/ai-dev-registry.py" refresh --root "$SYSTEM_ROOT"
     run_project_status "$project"
     ;;
   project-work)

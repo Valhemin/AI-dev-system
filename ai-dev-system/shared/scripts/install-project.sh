@@ -69,6 +69,9 @@ case "$TOOL" in
     ;;
 esac
 
+# Copy AI_ENTRY.md as the main entry point for the project
+cp "$SYSTEM_ROOT/AI_ENTRY.md" "$PROJECT_ROOT/.ai-dev-system/AI_ENTRY.md"
+
 python3 "$SYSTEM_ROOT/shared/scripts/project-intake.py" \
   --system-root "$SYSTEM_ROOT" \
   --project-root "$PROJECT_ROOT"
