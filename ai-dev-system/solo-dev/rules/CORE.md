@@ -4,7 +4,11 @@
 2. **Context First**: Before any action, verify if current context is sufficient. Use `context-pruning` if history is too long.
 3. **Inspect before editing**: Always read the file and its dependencies.
 4. **Minimal diff**: Change only what is necessary.
-5. **Reasoning Path**: For complex tasks, use `advanced-reasoning-cot` to explain the "Why" before the "How".
+5. **Token Economy**: 
+   - Keep reasoning concise. 
+   - If context is large, summarize previous steps before continuing.
+   - Use placeholders for unmodified code blocks.
+6. **Reasoning Path**: For complex tasks, use `advanced-reasoning-cot` to explain the "Why" before the "How".
 6. **Auto-Save**: After completing a significant change, run `ai-dev save-session . "topic"` to persist memory.
 7. **Language**: Reply in the user's latest primary language.
 8. **Integrity**: Keep code/logs/commands/paths/package names unchanged.

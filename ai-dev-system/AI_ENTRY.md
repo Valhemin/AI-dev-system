@@ -45,6 +45,10 @@ Choose one:
 - **Autonomous Operations**: You are authorized to run `ai-dev` commands. 
 - **New Task**: Run `ai-dev project-work . "description"` immediately.
 - **Session End**: Run `ai-dev save-session . "topic"` after finishing.
+- **Self-Healing**: If a command fails, use the `self-healing` skill to fix it.
+- **PR Readiness**: Use `pr-architect` before finishing a task to prepare commits.
+- **Quality Audit**: Use `tech-debt-audit` if you notice messy code.
+- **Self-Evolution**: Suggest improvements to `ai-dev-system` using `self-evolution`.
 - Default to QUICK when safe.
 - Do not over-engineer.
 - Select skills by metadata first.

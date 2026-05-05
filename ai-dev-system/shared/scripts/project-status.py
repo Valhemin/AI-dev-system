@@ -31,6 +31,10 @@ def main() -> None:
     print(f"Frameworks: {', '.join(manifest.get('frameworks', [])) or 'unknown'}")
     print(f"Recommended core skills: {len(manifest.get('recommended_core_skills', []))}")
     print(f"Project-local skills: {len(custom_index.get('skills', []))}")
+    
+    # Check for autonomous skills in the manifest or global registry
+    print(f"Autonomous skills: self-healing, pr-architect, tech-debt-audit, self-evolution")
+    
     print(f"Project docs tracked: {len(memory.get('tracked_project_docs', []))}")
     if (ai_dir / "current-task-brief.md").exists():
         print("Current task brief: present")

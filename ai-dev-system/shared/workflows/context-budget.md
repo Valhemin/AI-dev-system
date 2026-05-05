@@ -11,11 +11,11 @@ Source: shared/frozen-sources/repos/everything-claude-code/commands/context-budg
 
 ## Portable Protocol
 
-1. Classify the request and confirm this workflow is selected.
-2. Load only relevant active skills, roles, pack catalogs, or leaf files.
-3. Translate source-specific commands into the current AI/runtime capabilities.
-4. Execute the smallest useful workflow slice.
-5. Verify with concrete checks and report residual risk.
+1. **Audit**: Check current token usage (if available) or conversation length.
+2. **Prune**: Remove redundant file reads or old reasoning blocks.
+3. **Summarize**: Replace long chat history with a "State Summary" (Goal, Progress, Next Step).
+4. **Compact**: Use `context-pruning` skill to clean up the environment.
+5. **Verify**: Ensure critical facts (architecture, conventions) are still present.
 
 ## Context Rule
 

@@ -402,10 +402,19 @@ def active_skill_category(path: Path, root: Path) -> tuple[str | None, str | Non
     except ValueError:
         return None, None
     parts = rel.parts
+    # Support solo-dev/skills
     try:
         i = parts.index("solo-dev")
         if parts[i + 1] == "skills" and parts[-1] == "SKILL.md" and len(parts) == i + 5:
             return parts[i + 2], parts[i + 3]
+    except Exception:
+        pass
+    # Support packs/
+    try:
+        i = parts.index("packs")
+        if parts[-1] == "SKILL.md":
+            # packs/category/skills/name/SKILL.md
+            return parts[i + 1], parts[i + 3]
     except Exception:
         pass
     if rel.as_posix().endswith("shared/skill-spec/skill-template/SKILL.md"):
